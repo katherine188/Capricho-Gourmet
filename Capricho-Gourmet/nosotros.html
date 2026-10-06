@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre nosotros | Capricho Gourmet</title>
+
+    <meta name="description" content="Conoce la historia, filosofía y esencia de Capricho Gourmet.">
+    <meta name="keywords" content="Capricho Gourmet, repostería, dulces, postres, bombones">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Capricho Gourmet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li>
+                    <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="sobre-nosotros">
+
+            <div class="nosotros-imagen">
+                <img src="img/bombones.jpeg"
+                     alt="Bombones de chocolate oscuro rellenos de dulce de leche">
+            </div>
+
+            <div class="nosotros-contenido">
+
+                <h2>Sobre nosotros</h2>
+
+                <p>
+                    En Capricho Gourmet creemos que los pequeños detalles
+                    pueden convertirse en momentos especiales.
+                </p>
+
+                <p>
+                    Somos un espacio dedicado a la elaboración de dulces
+                    y productos de repostería preparados con dedicación,
+                    creatividad y mucho sabor.
+                </p>
+
+                <h3>Lo que nos caracteriza</h3>
+
+                <ul>
+                    <li>Productos elaborados con dedicación.</li>
+                    <li>Presentaciones cuidadas y elegantes.</li>
+                    <li>Sabores pensados para disfrutar cada momento.</li>
+                    <li>Atención cercana a nuestros clientes.</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="filosofia">
+
+            <article>
+                <h2>Nuestra filosofía</h2>
+
+                <p>
+                    Queremos que cada producto de Capricho Gourmet
+                    sea más que un dulce: queremos que sea una pequeña
+                    experiencia para compartir y disfrutar.
+                </p>
+            </article>
+
+            <article>
+                <h2>Nuestra esencia</h2>
+
+                <p>
+                    Combinamos sabores, creatividad y una presentación
+                    cuidada para crear productos que hagan de cada
+                    ocasión un momento especial.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+
+</body>
+
+</html>

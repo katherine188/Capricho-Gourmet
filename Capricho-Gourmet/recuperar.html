@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recuperar contraseña | Capricho Gourmet</title>
+
+    <meta name="description" content="Recupera el acceso a tu cuenta de Capricho Gourmet.">
+    <meta name="keywords" content="recuperar contraseña, Capricho Gourmet, cuenta">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Capricho Gourmet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li>
+                   <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+               </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="login-contenedor">
+
+                <p class="subtitulo">Recupera tu acceso</p>
+
+                <h2>¿Olvidaste tu contraseña?</h2>
+
+                <p class="login-descripcion">
+                    Introduce tu correo electrónico y te ayudaremos a recuperar el acceso a tu cuenta.
+                </p>
+
+                <form onsubmit="mostrarMensaje(event)">
+                    <div class="campo-login">
+                        <label for="correo-recuperacion">
+                            Correo electrónico:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo-recuperacion"
+                            name="correo-recuperacion"
+                            required
+                            placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <button type="submit" class="boton">
+                        Recuperar contraseña
+                    </button>
+                </form>
+
+                <p class="registro">
+                    ¿Recuerdas tu contraseña?
+                    <a href="login.html">Volver a iniciar sesión</a>
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    function mostrarMensaje(event) {
+        event.preventDefault();
+
+        alert("Solicitud enviada. Si el correo está registrado, recibirás las instrucciones para recuperar tu contraseña.");
+    }
+</script>
+<script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+</body>
+</html>

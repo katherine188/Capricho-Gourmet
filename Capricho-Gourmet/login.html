@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | Capricho Gourmet</title>
+
+    <meta name="description" content="Inicia sesión en Capricho Gourmet.">
+    <meta name="keywords" content="iniciar sesión, Capricho Gourmet, cuenta">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Capricho Gourmet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li>
+                   <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="login">
+
+            <div class="login-contenedor">
+
+                <p class="subtitulo">Bienvenido/a</p>
+
+                <h2>Iniciar sesión</h2>
+
+                <p class="login-descripcion">
+                    Accede a tu cuenta de Capricho Gourmet.
+                </p>
+
+                <form>
+
+                    <div class="campo-login">
+                        <label for="email">Correo electrónico:</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="campo-login">
+                        <label for="password">Contraseña:</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                            placeholder="Escribe tu contraseña">
+                    </div>
+
+                    <div class="opciones-login">
+
+                        <label class="recordarme">
+                            <input
+                                type="checkbox"
+                                id="recordar"
+                                name="recordar">
+
+                            Recordarme
+                        </label>
+
+                        <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+
+                    </div>
+
+                    <button type="submit" class="boton">
+                        Iniciar sesión
+                    </button>
+
+                </form>
+
+                <p class="registro">
+                    ¿No tienes una cuenta?
+                    <a href="registro.html">Regístrate aquí</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+
+</body>
+
+</html>

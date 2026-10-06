@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Capricho Gourmet</title>
+
+    <meta name="description" content="Contacta con Capricho Gourmet para realizar consultas y pedidos.">
+    <meta name="keywords" content="contacto, pedidos, Capricho Gourmet, dulces">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Capricho Gourmet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li>
+                   <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contacto">
+
+            <div class="contacto-info">
+
+                <p class="subtitulo">Estamos para ayudarte</p>
+
+                <h2>Contáctanos</h2>
+
+                <p>
+                    ¿Quieres realizar un pedido o tienes alguna pregunta?
+                    Escríbenos y estaremos encantados de atenderte.
+                </p>
+
+                <div class="ubicacion">
+                    <h3>Ubicación</h3>
+
+                    <p>
+                        Capricho Gourmet<br>
+                        La Habana, Cuba
+                    </p>
+                </div>
+
+                <div class="horario">
+                    <h3>Horario de atención</h3>
+
+                    <p>
+                        Lunes a sábado<br>
+                        9:00 a.m. - 6:00 p.m.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form class="formulario-contacto">
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                        placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                        placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        required
+                        placeholder="Tu número de teléfono">
+                </div>
+
+                <div class="campo">
+                    <label for="producto">Producto de interés:</label>
+
+                    <select id="producto" name="producto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="bombones">Bombones de chocolate</option>
+                        <option value="bombones-blancos">Bombones de chocolate blanco</option>
+                        <option value="ensalada">Ensalada fría</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha deseada:</label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                        placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <button type="submit" class="boton">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+
+</body>
+
+</html>

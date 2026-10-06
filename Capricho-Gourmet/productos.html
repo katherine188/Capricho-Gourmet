@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | Capricho Gourmet</title>
+
+    <meta name="description" content="Conoce los productos de Capricho Gourmet: bombones de chocolate, bombones de chocolate blanco y ensalada fría.">
+    <meta name="keywords" content="bombones, chocolate, ensalada fría, dulces, Capricho Gourmet">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Capricho Gourmet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li>
+                   <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="productos">
+
+            <div class="productos-intro">
+                <p class="subtitulo">Nuestros sabores</p>
+                <h2>Productos</h2>
+                <p>
+                    Descubre algunas de nuestras opciones preparadas
+                    para disfrutar en cualquier ocasión.
+                </p>
+            </div>
+
+            <div class="contenedor-productos">
+
+                <article class="tarjeta-producto">
+
+                    <img src="img/bombones-dulce-leche.jpeg"
+                         alt="Bombones de chocolate oscuro rellenos de dulce de leche">
+
+                    <div class="producto-contenido">
+                        <h3>Bombones de chocolate</h3>
+
+                        <p>
+                            Deliciosos bombones de chocolate oscuro
+                            con un suave y cremoso relleno de dulce de leche.
+                        </p>
+
+                        <span class="precio">$50</span>
+                    </div>
+
+                </article>
+
+
+                <article class="tarjeta-producto">
+
+                    <img src="img/bombones-blancos.jpeg"
+                         alt="Bombones de chocolate blanco">
+
+                    <div class="producto-contenido">
+                        <h3>Bombones de chocolate blanco</h3>
+
+                        <p>
+                            Bombones elaborados con chocolate blanco,
+                            ideales para quienes prefieren un sabor
+                            más suave y delicado.
+                        </p>
+
+                        <span class="precio">$50</span>
+                    </div>
+
+                </article>
+
+
+                <article class="tarjeta-producto">
+
+                    <img src="img/ensalada-fria.jpeg"
+                         alt="Vaso de ensalada fría">
+
+                    <div class="producto-contenido">
+                        <h3>Ensalada fría</h3>
+
+                        <p>
+                            Una opción deliciosa y práctica, preparada
+                            para disfrutar como acompañamiento o en
+                            cualquier ocasión especial.
+                        </p>
+
+                        <span class="precio">$200</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+
+</body>
+
+</html>

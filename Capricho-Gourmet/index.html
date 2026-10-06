@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Capricho Gourmet | Dulces hechos con amor</title>
+
+    <meta name="description" content="Capricho Gourmet, un espacio dedicado a dulces y productos de repostería elaborados con dedicación y sabor.">
+    <meta name="keywords" content="dulces, repostería, bombones, postres, Capricho Gourmet">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+<header>
+    <h1>Capricho Gourmet</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li>
+                <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+           </li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <section class="hero">
+        <div class="hero-contenido">
+            <p class="subtitulo">Dulces momentos, sabores inolvidables</p>
+
+            <h2>Un pequeño capricho puede alegrar tu día</h2>
+
+            <p>
+                En Capricho Gourmet elaboramos dulces y postres
+                con dedicación, creatividad y mucho sabor.
+            </p>
+
+            <a href="productos.html" class="boton">Ver nuestros productos</a>
+        </div>
+    </section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+</footer>
+<script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+</body>
+</html>

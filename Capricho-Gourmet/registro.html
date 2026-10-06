@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registrarse | Capricho Gourmet</title>
+
+    <meta name="description" content="Crea una cuenta en Capricho Gourmet.">
+    <meta name="keywords" content="registro, crear cuenta, Capricho Gourmet">
+    <meta name="author" content="Capricho Gourmet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Capricho Gourmet</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li>
+                   <button class="boton-tema" onclick="cambiarTema()">🌙 Tema oscuro</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="login">
+
+            <div class="login-contenedor">
+
+                <p class="subtitulo">Únete a nosotros</p>
+
+                <h2>Crear cuenta</h2>
+
+                <p class="login-descripcion">
+                    Crea tu cuenta en Capricho Gourmet para disfrutar de nuestros productos.
+                </p>
+
+                <form onsubmit="registrarUsuario(event)">
+
+                    <div class="campo-login">
+                        <label for="email-registro">
+                            Correo electrónico:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email-registro"
+                            name="email"
+                            required
+                            placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="campo-login">
+                        <label for="password-registro">
+                            Contraseña:
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password-registro"
+                            name="password"
+                            required
+                            minlength="6"
+                            placeholder="Mínimo 6 caracteres">
+                    </div>
+
+                    <div class="campo-login">
+                        <label for="confirmar-password">
+                            Confirmar contraseña:
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmar-password"
+                            name="confirmar-password"
+                            required
+                            minlength="6"
+                            placeholder="Repite tu contraseña">
+                    </div>
+
+                    <button type="submit" class="boton">
+                        Registrarme
+                    </button>
+
+                </form>
+
+                <p class="registro">
+                    ¿Ya tienes una cuenta?
+                    <a href="login.html">Inicia sesión aquí</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Capricho Gourmet. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+
+        function registrarUsuario(event) {
+
+            event.preventDefault();
+
+            const password =
+                document.getElementById("password-registro").value;
+
+            const confirmarPassword =
+                document.getElementById("confirmar-password").value;
+
+            if (password !== confirmarPassword) {
+
+                alert("Las contraseñas no coinciden.");
+
+                return;
+            }
+
+            alert("Registro completado correctamente. Ya puedes iniciar sesión.");
+
+        }
+
+    </script>
+    <script>
+    function cambiarTema() {
+        document.body.classList.toggle("tema-oscuro");
+    }
+</script>
+
+</body>
+
+</html>
